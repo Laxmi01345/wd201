@@ -47,13 +47,7 @@
     }
   })
   .listen(5000);
-  const getPort = () => {
-    const index = process.argv.indexOf('--port');
-    return index > -1 ? parseInt(process.argv[index + 1]) : 3000;
-}
 
-console.log("correct port: ", getPort());
-console.log("wrong port: ", process.argv[3]); 
 
 
   
